@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feedback</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </label>
+      <label class="logo">Rudra</label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="autoservice.html">Service</a></li>
+        <li><a href="autoabout.html">About</a></li>
+        <li><a href="autocontact.html">Contact</a></li>
+        <li><a class="active" href="autofeedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <div class="underline"></div>
+
+    <section>
+      <div class="container">
+        <form>
+          <h2>Feedback Form</h2>
+          <div class="id">
+            <label>Name : </label>
+            <input
+              type="text"
+              id="name"
+              name="myName"
+              placeholder="enter your name"
+            />
+            <i class="fa-solid fa-user fa-2x"></i>
+          </div>
+          <br /><br />
+          <div class="id">
+            <label>Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="myEmail"
+              placeholder="enter your email "
+            />
+            <i class="fa-solid fa-envelope fa-2x"></i>
+          </div>
+          <br /><br />
+          <div class="id">
+            <label>Contect :</label>
+            <input
+              type="tel"
+              id="contect"
+              name="myContect"
+              placeholder="enter your contect"
+            />
+            <i class="fa-solid fa-square-phone-flip fa-2x"></i>
+          </div>
+          <br /><br />
+          <div class="id">
+            <label>Coment :</label>
+            <textarea
+              type="text"
+              id="coment"
+              name="mycoment"
+              placeholder="coment"
+              rows="5"
+              cols="30"
+              width="50px"
+            ></textarea>
+            <i class="fa-solid fa-comments fa-2x"></i>
+          </div>
+          <br /><br />
+          <div class="id">
+            <button onclick="feedback()">SUBMIT</button>
+            <button>RESET FORM</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ..............................................footer.............................................. -->
+
+    <footer class="footer">
+      <div class="Company">
+        <h2>Work Site</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, fugit!
+          Cumque optio suscipit consectetur quidem Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Ex minus obcaecati qui doloribus dolor
+          iure excepturi ea ipsa eos, quisquam aut maiores
+        </p>
+      </div>
+      <div class="navi">
+        <h2>NAvigation</h2>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="autoservice.html">Service</a></li>
+        <li><a href="autoabout.html">About</a></li>
+        <li><a href="autocontact.html">Contact</a></li>
+        <li><a class="active" href="autofeedback.html">Feedback</a></li>
+      </div>
+      <div class="Followme">
+        <h2>Follow Me</h2>
+        <li>
+          <i class="fa-brands fa-linkedin" style="font-size: 25px"></i
+          ><a href="https://www.Linkedin.com/">Linkedin</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-twitter" style="font-size: 25px"></i
+          ><a href="https://twitter.com/">Twitter</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-instagram-square" style="font-size: 25px"></i
+          ><a href="https://www.instagram.com/">Instagram</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-facebook-square" style="font-size: 25px"></i
+          ><a href="https://www.facebook.com/">facebook</a>
+        </li>
+        <br />
+        <div class="email">
+          <i class="fa-solid fa-envelope" style="font-size: 25px"></i>
+          <h2>email</h2>
+          <p>softcoding@solutions.com</p>
+        </div>
+
+        <div class="phone">
+          <i class="fa-solid fa-phone" style="font-size: 25px"></i>
+          <h2>phone</h2>
+          <p>4344323243</p>
+        </div>
+      </div>
+    </footer>
+    <footer class="co">&copycopyright</footer>
+
+    <script src="autofeedback.js"></script>
+  </body>
+</html>

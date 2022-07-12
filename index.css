@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    /* font-size: 20px; */
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: 0.5s;
+    text-decoration: underline 2px solid blue;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;  
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: darkblue;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.underline{
+    border: solid black;
+}
+.img{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url(auto1.jpeg)
+      center/cover no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+.name{
+    /* justify-content: center;
+    text-align: center;
+    padding: 200px;
+    font-size: 20px;
+    font-weight: 20px;
+    color: darkblue;
+    width: 100%; */
+    flex: 1;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+.name h1{
+    padding: 22px 0;
+    font-size: 45px;
+    border-bottom: 1px solid #fff;
+}
+.name h3{
+    opacity: 0.7;
+  font-size: 20px;
+  margin: 45px auto;
+  width: 60vw;
+}
+@media (max-width: 500px) {
+    .name h1 {
+      font-size: 28px;
+    }
+    .name h3 {
+      font-size: 17px;
+      margin: 20px auto;
+    }
+  }
+.n1{
+    justify-content: center;
+    text-align: center;
+    visibility: hidden;
+    color: blue;
+    font-size: larger;
+    font-weight: bolder;
+    width: 100%;
+}
+.n:hover+.n1{
+    justify-content: center;
+    text-align: center;
+    visibility: visible;
+    width: 100%;
+}
+/* @media(max-width: 400px){
+    .name{
+        text-align: center;
+    }
+} */
+
+
+/* ...........................................service........................................... */
+
+.os{
+    text-align: left;
+    text-decoration: underline 3px solid darkcyan;
+    padding: 15px 70px;
+}
+.p{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 15px;
+    font-size: 25px;
+}
+img{
+    height: 190px;
+    width: 190px;
+}
+.p1{
+    background-color: #9CB4CC;
+    height: 70vh;
+    padding: 30px;
+}
+.p1 p, .p2 p{
+    font-size: medium;
+}
+.p2{
+    background-color:#748DA6;
+    height: 70vh;
+    color: whitesmoke;
+    padding: 30px;
+}
+@media(max-width: 900px){
+    .p{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: auto;
+        justify-items: center;
+    }
+    .p div{
+        float: 0 0 calc(50% - 20px);
+        margin: 5px;
+        width: 100vw;
+        height: auto;
+        justify-items: center;
+    }
+}
+
+
+
+/* ...........................................about........................................... */
+
+
+.ab{
+    text-align: left;
+    text-decoration: underline 3px solid darkcyan;
+    padding: 15px 70px;
+}
+.con{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 15px;
+    font-size: 25px;
+}
+.client, .rcar{
+    background-color: #A5BECC;
+    height: 50vh;
+    padding: 50px; 
+    width: 100%;
+}
+.worker{
+    background-color:#243A73;
+    height: 50vh;
+    padding: 50px;
+    width: 100%;
+}
+.con h1{
+    padding-top: 20px;
+}
+@media(max-width: 900px){
+    .con{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: auto;
+        justify-content: center;
+    }
+    .con div{
+        float: 0 0 calc(50% - 20px);
+        margin: 5px;
+        width: 100vw;
+        height: auto;
+        justify-content: center;
+    }
+}
+ 
+
+
+.bottom2 h2{
+    text-align: center;
+    text-decoration: underline 3px solid darkcyan;
+    padding-top: 20px;
+}
+.boxes{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 15px;
+    font-size: 25px;
+}
+.b1,.b2,.b3,.b4{
+    border-color: black;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 5px 10px;
+}
+.box1,.box2,.box3,.box4{
+    padding: 10px 20px;
+}
+@media(max-width: 900px){
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+    }
+    .boxes div{
+        float: 0 0 calc(50% - 20px);
+        margin: 5px;
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+
+    }
+}
+
+
+
+/* ...........................................feedback form........................................... */
+
+
+
+h2{
+    text-align: center;
+    text-decoration: underline 3px solid darkcyan;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    color: #0082e6;
+}
+.container{
+    text-align: center;
+    
+    background-color:lightgray;
+    box-shadow: 0 0 8px rgba(250,250,250,0.6);
+    opacity: 0.9;
+}
+label{
+    color: black;
+    font-size: 20px;
+    font-weight: 50px;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+form id{
+    position: relative;
+}
+.id i{
+    
+    top: 50%;
+    right: 20px;
+    margin-left: 20px;
+    transform: translate(-50%);
+}
+form input{
+    width: 40%;
+    height: 50px;
+    margin: 4px 0;
+    border: 1px solid #5c5c5c;
+    border-radius: 3px;
+    background: lightgrey;
+    padding-right: 45px;
+    font-size: 20px;
+    color: black;
+}
+
+button{
+    width: 250px;
+    height: 40px;
+    font-weight: 20px;
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 5px;
+    margin: 20px;
+    color: #222;
+}
+form button:hover{
+    background-color: darkgray;
+    border-radius: 10px;
+    border-color: chartreuse;
+}
+
+form input:focus::focus,
+form textarea:focus::focus{
+    border: 1px solid #00fff0;
+    color: #00fff0;
+    transform: all 0.3s ease;
+}
+form input:focus::placeholder,
+form textarea:focus::placeholder{
+    padding-left: 4px;
+    color: black;
+    transform: all 0.3s ease;
+}
+form input:focus + i{
+    color:darkblue;
+    transition: all 0.3s ease;
+}
+.lin{
+    border: solid black;
+}
+
+/* ...........................................contact........................................... */
+
+
+
+#add{
+    display: flex;
+    color: white;
+    background-color: #333;
+    padding: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+  .address{
+    padding: 70px;
+  }
+  .address i{
+    text-align: center;
+    justify-content: center;
+    /* padding-left: 400px; */
+  }
+  .newproject{
+    text-align: center;
+    background-color: #ffbc00;
+    width: 100%;
+    height: 20vh;
+    font-style: italic;
+    padding-top: 40px;
+    font-size: 50px;
+    font-weight: 40px;
+  }
+  @media(max-width: 900px){
+    #add{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+    }
+}
+
+
+
+/* ...................................footer................................... */
+.footer{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    color: gray;
+    background-color: black;
+    justify-content: center;
+}
+footer div h2{
+    color: gray;
+    padding: 10px;
+    padding-top: 20px;
+}
+.navi li{
+    padding: 20px;
+    font-size: larger;
+}
+.navi li a{
+    color: gray;
+}
+.navi li a:hover{
+    background-color: lightblue;
+}
+.company{
+    padding: 20px;
+}
+.followme{
+    padding: 20px;
+}
+li{
+    list-style-type: none;
+}
+.co{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+body{
+    background-color: lightgray;
+    text-align: center;
+}
+#forth .process-icon{
+
+/* #home-c .process-icon { */
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    transition: all 1s;
+
+}
+
+#forth .process-icon:hover {
+    background: #ffbc00;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+}
+
+#forth .process-step {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    background:green;
+    color: black;
+    border-radius: 50%;
+    height: 15px;
+    width: 1px;
+    line-height: 20px;
+    padding: 1rem;
+    transition: all 1s;
+}
+#forth{
+    display: flex;
+}
+.fifth{
+    background-color: white;
+}
+.six{
+    background-color: gray;
+}
+.Followme li{
+    font-size: larger;
+    font-weight: bolder;
+    padding: 20px;
+}
+.followme i:hover{
+    background-color: #ffbc00;
+
+}
+@media(max-width: 900px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+    }
+    .navi{
+        display: table-column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .followme div p{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
